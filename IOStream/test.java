@@ -6,21 +6,26 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.Callable;
+import java.util.stream.Stream;
 public class test {
-    void talk() {
+ 
 
+  final int a = 1;
+  static int b =2;
+  public static void test() {
+    class Dela {
+      void test() {
+        int c = a;
+      }
+    }
+  }
     public static void main(String[] args) {
-        Callable c = new Callable() {
-            public Object run() {
-                System.out.println("X");
-                return 10;
-            }
+      
+      int b =5;
+      switch(b) {
+        default: System.out.println(5);
+        case 'a': System.out.println(4);
+      }
 
-            @Override
-            public Object call() throws Exception {
-                // TODO Auto-generated method stub
-                throw new UnsupportedOperationException("Unimplemented method 'call'");
-            }
-        }
     }
 }
