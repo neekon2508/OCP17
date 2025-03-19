@@ -2,21 +2,18 @@ package Exception;
 
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-interface Flyer{ String getName(); }  
-class Bird implements Flyer{     public String name;     public Bird(String name){         this.name = name;     }    
- public String getName(){ return name; } }  class Eagle extends Bird {     public Eagle(String name){         super(name);     } }  
  public class TestClass {     
+  public static class TestInner {
+    public void sayIt() {System.out.println("Heelo");}
+  }
   public static void main(String[] args) throws Exception {        
-
-    System.out.println(null +" "); //1    
-   
-  } }
-
-
-  interface Book{   public default String getId(){      return "ISBN123456";   } }  
-  interface Encyclopedia extends Book{
-    default String getId(){ 
-      return "AIN8888"; };
-    }
+    var c = System.console(); //1         
+    char[] line = c.readPassword("Please enter your pwd:"); //2         System.out.println("Pwd is "+new String(line));         
+    
+  }
+ }
+ 
