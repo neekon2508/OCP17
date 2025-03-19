@@ -7,25 +7,17 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.stream.Stream;
-public class test {
+public class test<T>{
  
-
-  final int a = 1;
-  static int b =2;
-  public static void test() {
-    class Dela {
-      void test() {
-        int c = a;
-      }
+    class D {
+        static int a =9;
+        
+        static void test() {}
     }
-  }
-    public static void main(String[] args) {
-      
-      int b =5;
-      switch(b) {
-        default: System.out.println(5);
-        case 'a': System.out.println(4);
-      }
 
+    public static void main(String[] args) {
     }
 }
+class A{}
+class B extends A {}
+class C extends B{}
