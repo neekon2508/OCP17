@@ -1,19 +1,22 @@
 package Exception;
 
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
- public class TestClass {     
-  public static class TestInner {
-    public void sayIt() {System.out.println("Heelo");}
+public class TestClass {    
+  
+  
+  public static void main(String args[]) throws Exception    {     
+ int a1=1,a2=2,a3=3;
+       int a4= a1*(a1=a2) ;
+       System.out.println(a4);
+
   }
-  public static void main(String[] args) throws Exception {        
-    var c = System.console(); //1         
-    char[] line = c.readPassword("Please enter your pwd:"); //2         System.out.println("Pwd is "+new String(line));         
-    
-  }
- }
+}
  
