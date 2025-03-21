@@ -30,12 +30,16 @@ public class test{
     }
 
     public static void main(String[] args) throws Exception {
-    var original = List.of(1,2,3,4,5);
-    var cop1 = new ConcurrentLinkedDeque<Integer>(original);
-    for(Integer w : cop1) cop1.poll();
-    System.out.println(cop1);
+        
     }
 }
-class A{}
-class B extends A {}
-class C extends B{}
+class A{
+    public <T> List<T> transform(List<T> list) {
+        return new ArrayList<T>();
+    }
+}
+class B extends A {
+    @Override
+    public <K> ArrayList<K> transform(List<K> list) {return null;}
+}
+
